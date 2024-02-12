@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font awesome CDN Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Event Management System</title>
+
+    <!--style css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Hesder/Navbar Start Session-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.jpg" alt="Events">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Typeofevent">Events `</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Brithday Event</a></li>
+                        <li><a href="#">Anniversary</a></li>
+                        <li><a href="#">Marriage_Event</a></li>
+                        <li><a href="#">Post-wedding_Shoots</a></li>
+                        <li><a href="#">Pre-wedding_Shoots</a></li>
+                        <li><a href="#">Sangeet_Event</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Review">Review</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-search" id="searchBtn"></div>
+            <div class="fa fa-user" id="loginBtn"></div>
+            <div class="fa fa-bars" id="menuBtn"></div>
+        </div>
+
+        <div class="searchForm">
+            <input type="search" id="searchBox" placeholder="Search Here">
+        </div>
+    </header>
+    <!--Hesder/Navbar End Session-->
+
+    <!--Login form Start-->
+    <div class="LoginFormContainer">
+        <i class="fa fa-times" id="FormClose"></i>
+
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" required placeholder="Enter Your Email" class="box">
+            <input type="pasword" required placeholder="Enter Your Passeord" class="box">
+            <a href="#"><input type="submit" value="Login Now" class="btn"><a>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember Me</label>
+            <p>Forget Password? <a href="#">Click Me</a></p>
+            <p>Don't Have An Account? <a href="#">Register Now</a></p>
+        </form>
+    </div>
+    <!--Login form End-->
+
+    <!--Home Session Start-->
+    <section id="home" class="home"></section>
+    <!--Home Session End-->
+
+    <!--Custom Script-->
+    <script src="index.js"></script>
+</body>
+</html>

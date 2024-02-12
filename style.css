@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+*{
+    font-family: "Besley", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear all;
+}
+
+html{
+    font-size: 62,5%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*::selection{
+    background: var(--main);
+    color: #fff;
+}
+
+:root{
+    --main: #ee1026;
+    --box_shadow:0 0.5rem 1.5rem rgba(0,0,0,0.4);
+}
+
+/*Navbar Session Start*/
+.header{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box_shadow);
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header .logo img{
+    height: 2rem;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 0.5rem 0.9rem;
+}
+
+/*Dropdown list Start*/
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li ul.dropdown li{
+    display: block;
+    padding-bottom: 10%;
+}
+
+ul li ul.dropdown{
+    width: 200%;
+    margin-top: 11%;
+    background: #000;
+    position: absolute;
+    display: none;
+    border-radius: 5%;
+}
+
+ul li a:hover{
+    color: #fff;
+    background: var(--main);
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+/*DropDown List End*/
+
+.header .navbar a:hover,
+.header .navbar a.active{
+    color: #fff;
+    background: var(--main);
+}
+
+
+.header .icons div{
+    color: #fff;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover{
+    color: var(--main);
+}
+
+#menuBtn{
+    display: none;
+}
+
+.header .searchForm{
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    width: 25%;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    transform: scale(0);
+    transform-origin: top;
+    background-color: #ccc;
+}
+
+.header .searchForm.active{
+    transform: scale(1);
+}
+
+.header .searchForm input{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    padding: 0.5rem;
+    color: #000;
+    font-size: 1rem;
+    text-transform: none;
+}
+
+.header .searchForm input::placeholder{
+    color: #000;
+}
+/*Navbar Session End*/
+
+/* Login Form Start */
+.LoginFormContainer{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginFormContainer.active{
+    top: 0;
+}
+
+.LoginFormContainer form{
+    margin: 2rem;
+    width: 50rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.LoginFormContainer form h3{
+    font-size: 2rem;
+    color: #444;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.LoginFormContainer form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 0.1rem solid rgba(0,0,0,0.4);
+    text-transform: none;
+    margin: 0.6rem 0;
+    color: #333;
+}
+
+.LoginFormContainer #remember{
+    margin: 2rem 0;
+}
+
+.LoginFormContainer label{
+    font-size: 1.1rem;
+}
+
+.LoginFormContainer .btn{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    display: block;
+}
+
+.LoginFormContainer p{
+    color: #666;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.LoginFormContainer p a{
+    color: var(--main);
+}
+
+.LoginFormContainer #FormClose{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Home Session Start*/
+.home{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url("img/hobg.jpg");
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/*Home Session End*/
+/* Login Form Start */
+
